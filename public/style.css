@@ -1,0 +1,101 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 55%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid rgb(189, 200, 34);
+}
+
+input[type=text]{
+    border: 1px solid lightgray;
+    padding: 6px;
+}
+
+input[type=submit]{
+    border: 2px solid black;
+    background-color: rgb(0, 0, 0);
+    padding: 7px;
+    cursor: pointer;
+    color:whitesmoke;
+    transition: .3s;
+}
+
+input[type=submit]:hover{
+    background-color: rgb(189, 200, 34);
+    color:black;
+    border:2px solid rgb(189, 200, 34);
+    border-radius: 3px;
+}
+
+.formgroupe{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 34%;
+   
+}
+
+.err{
+    color: rgb(255, 0, 0);
+    font-size: 13px;
+    font-family: Arial;
+}
+
+.resultat{
+    width: 55%;
+    background-color: rgb(189, 200, 34);
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: Arial;
+    color: whitesmoke;
+}
+
+.formgroupe div{
+    display: flex;
+    align-items: end;
+}
+
+.cercle{
+    width: 18px;
+    height: 18px;
+    background-color: red;
+    border-radius: 50px;
+    position: relative;
+}
+
+ .barreone{
+    width: 15px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    transform-origin: 0 0;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: rotate(45deg) translate(-50%,-50%);
+} 
+
+.barretwo{
+    width: 15px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    transform-origin: 0 0;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: rotate(315deg) translate(-50%,-50%);
+}
+
+
+
